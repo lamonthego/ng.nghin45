@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion | OOTD</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+    <link rel="stylesheet" href="main.css">
+
+    <!-- FONT GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- ICON-->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body class="body ">
+    <header class="header">
+        <nav class="nav">
+            <!-- ICON MENU -->
+            <div class="icon-menu">
+                <i class='bx bx-menu-alt-left'></i>
+            </div>
+            <!-- NAV MENU -->
+            <div class="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class='bx bx-home-heart'></i>
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class='bx bx-link'></i>
+                            <span>Link SP</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class='bx bx-user-circle'></i>
+                            <span>About me</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <i class='bx bxs-contact'></i>
+                            <span>Contacts</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="icon-close">
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+
+                <div class="socials">
+                    <a href="https://www.instagram.com/" class="social-link">
+                        <i class='bx bxl-instagram'></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class='bx bxl-facebook'></i>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class='bx bxl-messenger'></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@ng.nghin45?_t=8mPfzHr5uUL&_r=1" class="social-link">
+                        <i class='bx bxl-tiktok'></i>
+                    </a>
+                </div>
+                <div class="mode">
+                    <div class="text-mode">
+                        Dark Mode
+                    </div>
+                    <div class="dark-mode">
+                        <div class="morning dark-night"></div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- LOGO -->
+            <a href="#" class="logo">
+                <span>Chaohapbanhbao</span>
+                <i class='bx bxs-pizza'></i>
+            </a>
+        </nav>
+
+        <div class="infomation">
+            <div class="info-name">
+                <h1 class="">DUONG NGHIEN</h1>
+                <span class="">@ng.nghin45</span>
+                <p class="">Không thích mặc theo TREND chỉ cần mình thấy đẹp là được :3</p>
+            </div>
+            <div class="img-profile">
+                <img src="img-profile.jpg" alt="" class="">
+            </div>
+        </div>
+
+        <div class="dash"></div>
+
+        <div class="link-beacon">
+            <!-- <h1 class="">Link SP:</h1> -->
+            <div class="link-beacons">
+                <p>" Ấn Coppy rồi Dán qua trình Duyệt trên Điện Thoại nha ^^ "</p>
+                <div class="beacons-text">Beacons.com/ng.nghin45</div>
+                <button class="" id="copyButton">Coppy</button>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+        <section class="section-trousers">
+            <h2 class="title-trousers">Top <span>TREND</span></h2>
+            <div class="carousei">
+                <ul class="slider-trousers">
+                    <li class="slider-trousers-li">
+                        <a href="https://shope.ee/9pIPYooLjw" class="trousers-link">
+                            <img src="trousers-2.jpg" alt="trousers-1">
+                            <div class="content-trousers">
+                                <p> Chân váy xinh</p>
+                                <span>@shopee</span>
+                            </div>
+                            <div class="btn-buy">
+                                <button>Xem chi tiết</button>
+                            </div>
+                        </a>
+                    </li>
+
+
+                </ul>
+
+                <div class="prev-next">
+                    <button>
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <button class=" btn-next-chevron">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        const iconMenu = document.querySelector('.icon-menu')
+        const navMenu = document.querySelector('.nav-menu');
+        const iconClose = document.querySelector('.icon-close');
+        const infomation = document.querySelector('.infomation');
+        const logo = document.querySelector('.logo');
+        const linkBeacon = document.querySelector('.link-beacon');
+        const dash = document.querySelector('.dash');
+        const darkMode = document.querySelector('.dark-mode')
+        const morning = document.querySelector('.morning');
+
+        const bodyElement = document.querySelector('.body');
+        const header = document.querySelector('.header');
+
+
+
+        iconMenu.addEventListener('click', () => {
+            navMenu.classList.add('show-menu');
+
+            if (navMenu.classList.contains('show-menu')) {
+                infomation.classList.add('infomationBlur');
+                logo.classList.add('logoHidden');
+                linkBeacon.classList.add('logoHidden');
+                dash.classList.add('logoHidden');
+
+            } else {
+                console.log('not')
+            }
+        })
+        iconClose.addEventListener('click', () => {
+            navMenu.classList.remove('show-menu');
+            if (!navMenu.classList.contains('show-menu')) {
+                infomation.classList.remove('infomationBlur');
+                logo.classList.remove('logoHidden');
+                linkBeacon.classList.remove('logoHidden');
+                dash.classList.remove('logoHidden');
+
+            } else {
+                console.log('not')
+            }
+        })
+
+        document.querySelector('.dark-mode').addEventListener('click', () => {
+            document.querySelector('.morning').style.left = "60%";
+
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var copyButton = document.getElementById('copyButton');
+            var linkProducts = document.querySelector('.beacons-text');
+
+            copyButton.addEventListener('click', function () {
+                // Tạo một thẻ input để sao chép nội dung vào clipboard
+                var input = document.createElement('input');
+                input.setAttribute('value', linkProducts.textContent);
+                document.body.appendChild(input);
+
+                // Chọn và sao chép nội dung
+                input.select();
+                document.execCommand('copy');
+
+                // Xóa thẻ input đã tạo
+                document.body.removeChild(input);
+
+                // Thông báo cho người dùng biết nội dung đã được sao chép
+                alert('Đã Coppy ');
+            });
+        })
+    </script>
+
+</body>
+
+</html>

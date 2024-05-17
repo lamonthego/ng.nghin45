@@ -1,0 +1,302 @@
+:root {
+    --bg-primary: #e7f5ff;
+    --bg-container: #f8f9fa;
+
+    --font-primary: #212529;
+    --font-extra: #343a40;
+    --fonnt-hover: #495057;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.body {
+    max-width: 130rem;
+    margin: 0 auto;
+    background-color: var(--bg-primary);
+}
+
+header {
+    z-index: 10;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+}
+
+.icon-menu i {
+    font-size: 1.7rem;
+}
+
+.logo {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--font-primary);
+
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.logo i {
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-link i {
+    font-size: 1.5rem;
+}
+
+.icon-close {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-close i {
+    font-size: 1.5rem;
+    background-color: var(--font-extra);
+    color: #fff;
+    border-radius: 50%;
+
+}
+
+.socials {
+    display: flex;
+    gap: 1rem;
+}
+
+.socials .social-link {
+    font-size: 1.5rem;
+    color: var(--font-extra);
+}
+
+.nav-link span {
+    color: var(--font-primary);
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+}
+
+/* HOVER: NAV-LIST */
+
+
+.nav-item {
+    position: relative;
+}
+
+.nav-link i {
+    position: absolute;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all 0.3s ease-out;
+}
+
+.nav-link:hover i {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nav-link span {
+    transition: all 0.3s ease-out;
+}
+
+.nav-item:hover .nav-link span {
+    margin-left: 2rem;
+}
+
+/* .nav-item .nav-link span::after {
+    content: "";
+    width: 100%;
+    height: 1px;
+
+    background-color: var(--font-extra);
+
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+} */
+.social-link i {
+    font-size: 2rem;
+    transition: all 0.3s ease-out;
+}
+
+.social-link i:hover {
+    transform: translateY(-4px);
+}
+
+.nav {
+    background-color: var(--bg-container);
+}
+
+.icon-menu i {
+    transition: all 0.3s ease-out;
+}
+
+.icon-menu i:hover {
+    transform: translateX(5px);
+}
+
+.infomation {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+    gap: 2rem;
+}
+
+.info-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-name h1 {
+    font-size: 1.2rem;
+}
+
+.info-name span {
+    font-size: 0.8rem;
+}
+
+.info-name p {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--font-extra);
+}
+
+.img-profile img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.192);
+}
+
+.dash {
+    height: 1.5px;
+
+    background-color: rgba(0, 0, 0, 0.423);
+    max-width: 50%;
+    margin: 2rem auto;
+}
+
+.link-beacon {
+    padding: 2rem;
+
+}
+
+.link-beacon h1 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.link-beacon {
+    max-width: 20rem;
+    height: 15rem;
+    background-color: var(--bg-container);
+
+    border-radius: 10px;
+    margin: 4rem auto;
+    box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.link-beacons p {
+    font-size: 0.7rem;
+    color: var(--font-primary);
+    font-weight: 600;
+}
+
+.beacons-text {
+    margin-top: 3rem;
+    width: 100%;
+    height: 2rem;
+    background-color: #657166;
+    /* border-radius: 5px; */
+    text-align: center;
+    padding-top: 8px;
+    color: #fff;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.link-beacons button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 2rem;
+    margin: 2rem auto;
+    background-color: #212529;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 600;
+
+    transition: all 0.3s ease-out;
+}
+
+.link-beacons button:hover {
+    background-color: var(--fonnt-hover);
+}
+
+
+
+.infomationBlur {
+    transition: all 0.3s ease-out;
+    z-index: 1;
+    filter: blur(5px);
+
+}
+
+.logoHidden {
+    filter: blur(5px);
+    transition: all .4s ease-out;
+}
+
+/* ============== DARK MODE =========== */
+.dark-mode {
+    width: 5rem;
+    height: 2rem;
+    background-color: var(--font-primary);
+    border: 1px solid #212529;
+    border-radius: 20px;
+    position: relative;
+
+    transition: all 0.3s ease-out;
+}
+
+.dark-mode .morning {
+    width: 30px;
+    height: 30px;
+    background-color: var(--bg-container);
+    border-radius: 50%;
+
+    position: absolute;
+    top: 1%;
+    left: 0;
+    transition: all 0.3s ease-out;
+
+}
+
+.dark-night {
+    left: 60%;
+}
